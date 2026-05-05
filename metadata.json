@@ -1,0 +1,11 @@
+{
+  "name": "Dr Pepper: One of a Kind Experience",
+  "description": "An immersive, conversion-optimized brand experience for Dr Pepper, featuring the 23 flavors, interactive personality quiz, and product showcase.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "AI-powered",
+    "Interactive Experience"
+  ]
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Anton", sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-dp-maroon: #71121C;
+  --color-dp-black: #0A0A0A;
+  --color-dp-cream: #F5F2ED;
+  
+  --color-drpepper-red: #71121C;
+  --color-drpepper-black: #0A0A0A;
+  --color-drpepper-dark: #1A0D0E;
+}
+
+@layer base {
+  body {
+    @apply bg-dp-black text-dp-cream antialiased font-sans;
+  }
+  
+  h1, h2, h3, h4, .display-font {
+    @apply font-display uppercase;
+  }
+}
+
+.editorial-grid-border {
+  @apply border-white/10;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.glass-card {
+  @apply bg-white/[0.03] backdrop-blur-md border border-white/10;
+}
+
+.accent-maroon {
+  @apply text-dp-maroon;
+}
+
+.bg-maroon {
+  @apply bg-dp-maroon;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
